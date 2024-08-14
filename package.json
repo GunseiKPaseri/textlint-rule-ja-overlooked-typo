@@ -1,0 +1,37 @@
+{
+  "name": "textlint-rule-ja-overlooked-typo",
+  "version": "0.0.1",
+  "description": "見逃しがちなタイプミスを検出します",
+  "main": "lib/index.js",
+  "files": ["lib/", "src/"],
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build",
+    "fmt": "biome check --write .",
+    "lint": "biome ci ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GunseiKPaseri/textlint-rule-ja-overlooked-typo.git"
+  },
+  "keywords": ["textlint", "textlintrule", "japanese"],
+  "author": "GunseiKPaseri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GunseiKPaseri/textlint-rule-ja-overlooked-typo/issues"
+  },
+  "homepage": "https://github.com/GunseiKPaseri/textlint-rule-ja-overlooked-typo#readme",
+  "dependencies": {
+    "@textlint/regexp-string-matcher": "^2.0.2",
+    "match-index": "^1.0.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@textlint/types": "^14.0.5",
+    "textlint-scripts": "^14.0.5",
+    "textlint-tester": "^14.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
