@@ -42,12 +42,15 @@ textlint --rule ja-overlooked-typo README.md
 
 - `allow`：例外とする文字列のリスト
   - `"$num$"`：カタカナの単位等で数字が入る場合に含める（漢数字が入る場合を例外として扱います）
+- `strictMode`：`true`の場合、誤検知も恐れず積極的に検出します。
+  - 「データベースへアクセス」の「へ」などにも反応する可能性があります。
 
 ```
 {
   "rules": {
     "ja-overlooked-typo": {
-      "allow": ["$num$ペニー"]
+      "allow": ["$num$ペニー"],
+      "strictMode": true,
     }
   }
 }
