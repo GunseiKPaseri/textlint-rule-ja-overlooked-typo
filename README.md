@@ -4,7 +4,7 @@
 [![Node.js CI](https://github.com/GunseiKPaseri/textlint-rule-ja-overlooked-typo/actions/workflows/ci.yml/badge.svg)](https://github.com/GunseiKPaseri/textlint-rule-ja-overlooked-typo/actions/workflows/ci.yml)
 [![textlint rule](https://img.shields.io/badge/textlint-fixable-green.svg?style=social)](https://textlint.github.io/) 
 
-`textlint-rule-ja-tojihiraki` は見逃しそうなタイプミスを検出します。
+`textlint-rule-ja-overlooked-typo` は見逃しそうなタイプミスを検出します。
 
 例：
 - カタカナに混じる漢字
